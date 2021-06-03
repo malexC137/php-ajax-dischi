@@ -1,1 +1,28 @@
+html {
+  font-family: "Montserrat", sans-serif;
+}
 
+.container {
+  width: 1140px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.album-card {
+  margin: 20px;
+  background-color: rgba(0, 255, 195, 0.1);
+  border: solid 3px rgba(157, 0, 255, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  flex-basis: calc(100% / 6);
+  padding: 20px;
+}
+.album-card img {
+  width: 150px;
+  height: 150px;
+}

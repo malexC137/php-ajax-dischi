@@ -1,0 +1,13 @@
+.album-card {
+    margin: 20px;
+    background-color: $card-color;
+    border: $card-border;
+    border-radius: 10px;
+    text-align: center;
+    flex-basis: calc(100% / 6);
+    padding: 20px;
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
