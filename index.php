@@ -1,5 +1,5 @@
 <?php
-include "./src/partials/template/main.php";
+// include "./main.php";
 ?>
 
 <!DOCTYPE html>
@@ -22,21 +22,6 @@ include "./src/partials/template/main.php";
         <header></header>
         <main>
             <div class="container">
-                <ul>
-                    <?php
-                    foreach ($discs_list as $disc_key => $disc_arr) {
-                    ?>
-                        <li class="album-card">
-                            <img src=" <?php echo $disc_arr["poster"] ?> " alt="">
-                            <h4> <?php echo $disc_arr["title"] ?> </h4>
-                            <h3> <?php echo $disc_arr["author"] ?> </h3>
-                            <p> <?php echo $disc_arr["genre"] ?> </p>
-                            <h6> <?php echo $disc_arr["year"] ?> </h6>
-                        </li>
-                    <?php
-                    }
-                    ?>
-                </ul>
                 <ul>
                     <li v-for="album in albumList" class="album-card">
                         <img :src="album.poster" alt="">

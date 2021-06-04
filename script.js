@@ -4,10 +4,10 @@ new Vue({
         albumList: [],
     },
     mounted() {
-        axios.get("https://flynn.boolean.careers/exercises/api/array/music")
+        axios.get("http://localhost:8888/Boolean/Giorno%2056%20Php/php-ajax-dischi/main.php")
         .then((resp) => {
-            this.albumList = resp.data.response
-            this.albumList.sort((a, b) => parseFloat(a.year) - parseFloat(b.year));
+            this.albumList = resp.data
+            console.log(this.albumList)
         })
     }
 })
