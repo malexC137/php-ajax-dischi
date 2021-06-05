@@ -2,12 +2,29 @@ new Vue({
     el: "#app",
     data: {
         albumList: [],
+        filters: {
+            fGenre: "",
+            fAuthor:"",
+            fTitle: "",
+        }
     },
+    methods: {
+        fetchData() {
+            axios.get("main.php", {
+                params: {
+                    ...this.filters,
+                }
+            })
+                .then((resp) => {
+                    this.albumList = resp.data
+                })
+        },
+        onGenreSubmit() {
+            this.fetchData();
+        }
+    },
+
     mounted() {
-        axios.get("http://localhost:8888/Boolean/Giorno%2056%20Php/php-ajax-dischi/main.php")
-        .then((resp) => {
-            this.albumList = resp.data
-            console.log(this.albumList)
-        })
+        this.fetchData();
     }
 })

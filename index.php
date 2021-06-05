@@ -1,7 +1,3 @@
-<?php
-// include "./main.php";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +15,14 @@
 
 <body>
     <div id="app">
-        <header></header>
+        <header>
+            <form @submit.prevent="onGenreSubmit">
+                <input type="text" v-model="filters.fGenre" placeholder="Cerca genere">
+                <input type="text" v-model="filters.fAuthor" placeholder="Cerca artista">
+                <input type="text" v-model="filters.fTitle" placeholder="Cerca titolo">
+                <button type="submit">Cerca</button>
+            </form>
+        </header>
         <main>
             <div class="container">
                 <ul>
