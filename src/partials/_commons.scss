@@ -1,6 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Montserrat', sans-serif;
+    overflow: auto;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(66,255,234,1) 0%, rgba(9,64,121,1) 69%, rgba(255,0,151,1) 100%);
 }
+
 
 .container {
     width: 1140px;

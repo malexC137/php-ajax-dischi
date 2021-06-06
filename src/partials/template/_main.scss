@@ -1,13 +1,19 @@
+main {
+    height: 80vh;
+    overflow: auto;
+    padding: $spacing*2;
+}
+
 .album-card {
-    margin: 20px;
+    margin: $spacing;
     background-color: $card-color;
-    border: $card-border;
-    border-radius: 10px;
+    border-radius: $spacing;
     text-align: center;
     flex-basis: calc(100% / 6);
-    padding: 20px;
+    padding: $spacing*2;
     img {
         width: 150px;
         height: 150px;
+        margin-bottom: $spacing*2;
     }
 }

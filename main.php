@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . "/src/partials/vars.php";
+include __DIR__ . "/server/vars.php";
 
 $filters = [
     "genre" => isset($_GET["fGenre"]) ? $_GET["fGenre"] : null,

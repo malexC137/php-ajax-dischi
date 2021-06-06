@@ -1,0 +1,32 @@
+.header-container {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: $spacing*2;
+    .logo-container {
+        img {
+            transform: translateX(-10%);
+            width: 400px;
+            background-color: transparent;
+        }
+    }
+
+    .distancer {
+        flex-grow: 1;
+    }
+    
+    form {
+        input, button {
+            padding: $spacing*0.5 $spacing;
+            border: none;
+            border-radius: 2px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        button {
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+}
